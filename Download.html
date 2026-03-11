@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PlayAura-Download</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+       
+        .nav {
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 8px 15px;
+            background-color: skyblue;
+            border-radius: 4px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            background-color: #1db954;
+            color: white;
+        }
+        .title{
+    text-align:center;
+    font-size:24px;
+    margin:20px;
+}
+
+
+.Download-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    max-width:750px;
+    margin:20px auto;
+    padding:15px;
+    background:white;
+    border-radius:12px;
+}
+
+
+.Download-card img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+
+.song-info{
+    flex:1;
+}
+
+.song-info h3{
+    margin:5px 0;
+}
+
+.song-info p{
+    color:gray;
+}
+
+
+.song-info a button{
+    margin-top:10px;
+    padding:8px 16px;
+    border:none;
+    border-radius:20px;
+    background:skyblue;
+    cursor:pointer;
+}
+
+.song-info a button:hover{
+    background:black;
+    color:white;
+}
+.delete-btn{
+    margin-left:10px;
+    padding:8px 16px;
+    border:none;
+    border-radius:20px;
+    background:red;
+    color:white;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:black;
+}
+
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+        <a href="project2.html">Home</a>
+        <a href="Search.html">Search</a>
+        <a href="Library.html">Library</a>
+        <a>Downloads</a>
+    </nav>
+    <div class="title">Downloads</div>
+
+<!-- Song 1 -->
+<div class="Download-card">
+
+    <img src="Tolly4pic_jpj.jpg">
+
+    <div class="song-info">
+        <h3>Baadshaho</h3>
+        <p>Mere Rashke Qamar</p>
+
+        <!-- Direct Link -->
+        <a href="https://youtu.be/q8gilwzNQEA?si=7Pipt5GqsYTgFoUT" target="_blank">
+            <button>Open</button>
+        </a>
+         <button class="delete-btn">Delete</button>
+    </div>
+
+</div>
+
+<!-- Song 2 -->
+<div class="Download-card">
+
+    <img src="Tolly5pic_jpj.jpg">
+
+    <div class="song-info">
+        <h3>Kannappa</h3>
+        <p>Shiva Shiva Shankara</p>
+
+        <a href="https://youtu.be/VnPFQ7nNu0U?si=zoIWx_lRZUvlk4T4" target="_blank">
+            <button>Open</button>
+        </a>
+        <button class="delete-btn">Delete</button>
+    </div>
+
+</div>
+    </body>
+</html>
