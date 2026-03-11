@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlayAura - Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+       
+        .nav {
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 8px 15px;
+            background-color: skyblue;
+            border-radius: 4px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            background-color: #1db954;
+            color: white;
+        }
+
+        
+        .search-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .search-container h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .search-container input[type="text"] {
+            width: 60%;
+            padding: 12px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .search-container button {
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: none;
+            background-color: #1db954;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: black;
+        }
+
+       
+        .results {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .results p {
+            font-size: 18px;
+            color: #333;
+        }
+        
+
+    </style>
+   
+</head>
+<body>
+     <script>
+function searchSong() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let resultsDiv = document.getElementById("results");
+
+    // simple song database
+    let songs = [
+        "Mehabooba",
+        "Meesaala Pilla",
+        "Deva Deva",
+        "Duniya",
+        "Saiyaara",
+        "Channa Mereya"
+    ];
+
+    let found = songs.filter(song =>
+        song.toLowerCase().includes(input)
+    );
+
+    if (input === "") {
+        resultsDiv.innerHTML = "<p>Please type something...</p>";
+        return;
+    }
+
+    if (found.length > 0) {
+        resultsDiv.innerHTML =
+            "<p>Results:</p>" +
+            found.map(song => "<p> " + song + "</p>").join("");
+    } else {
+        resultsDiv.innerHTML = "<p>No songs found </p>";
+    }
+}
+</script>
+
+   
+    <nav class="nav">
+        <a href="project2.html">Home</a>
+        <a>Search</a>
+        <a href="Library.html">Library</a>
+        <a href="Download.html">Downloads</a>
+        
+
+    </nav>
+
+    
+    <div class="search-container">
+        <h2>Search for Songs</h2>
+        <input type="text" id="searchInput" placeholder="Type song or movie name...">
+        <button onclick="searchSong()">Search</button>
+    </div>
+
+    
+    <div class="results" id="results">
+        <p>Search results will appear here...</p>
+       
+    </div>
+
+</body>
+</html>
