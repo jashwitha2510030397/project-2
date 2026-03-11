@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>PlayAura-Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+       
+        .nav {
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 8px 15px;
+            background-color: skyblue;
+            border-radius: 4px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            background-color: #1db954;
+            color: white;
+        }
+
+        .library-card{
+           display:flex;
+    align-items:center;
+    gap:30px;
+    width:600px;
+    margin:25px auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+       flex-direction: column;
+        }
+        .library-card img{
+          width:120px;
+    height:160px;
+    object-fit:cover;
+    border-radius:10px;
+        }
+        .song-info{
+    flex:1;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.song-info button{
+    padding:8px 16px;
+    margin-top:8px;
+    margin-right:8px;
+    border:none;
+    border-radius:20px;
+    background:#1db954;
+    color:white;
+    cursor:pointer;
+}
+
+.song-info button:hover{
+    background:black;
+}
+
+    </style>
+   </head> 
+   <body>
+    <nav class="nav">
+        <a href="project2.html">Home</a>
+        <a href="Search.html">Search</a>
+        <a>Library</a>
+        <a href="Download.html" >Downloads</a>
+        
+
+    </nav>
+   <center><h2>Recently Played</h2></center>
+
+
+<div class="library-card">
+
+<img src="Tollpic_jpj.jpg" alt="Yenti Yenti Song">
+
+<div class="song-info">
+<h3> Song: Yenti Yenti</h3>
+<p> Movie: Geeta Govindam</p>
+
+<a href="https://youtu.be/LOZNKZfiFUw?si=DvIxza8dXomD1QvV" target="_blank">
+<button>Play</button>
+</a>
+
+<button>Remove</button>
+
+</div>
+</div>
+
+<!-- SONG 2 -->
+<div class="library-card">
+
+<img src="Tollypic2_jpj.jpg" alt="Priyatama Song">
+
+<div class="song-info">
+<h3> Song: Priyatama</h3>
+<p> Movie: Majili</p>
+
+<a href="https://youtu.be/BpINyS4k7Uw?si=06q0E8HDtx6Vhqnq" target="_blank">
+<button>Play</button>
+</a>
+
+<button>Remove</button>
+
+</div>
+</div>
+
+<!-- SONG 3 -->
+<div class="library-card">
+
+<img src="Tolly3pic_jpj.jpg" alt="Bullet Song">
+
+<div class="song-info">
+<h3> Song: Bullet</h3>
+<p> Movie: George Reddy</p>
+
+<a href="https://youtu.be/DVswJyheZQk?si=iNSL67IwHUXIg5Rc" target="_blank">
+<button>Play</button>
+</a>
+
+<button>Remove</button>
+
+</div>
+</div>
+
+</body>
+</html>
